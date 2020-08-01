@@ -36,7 +36,7 @@ def pre_process(http_body, files=None):
         else:
             row_feats.append(0)
 
-    return np.array(row_feats).reshape(1, -1)
+    return np.array(row_feats)
 
 
 class Model:
@@ -45,4 +45,4 @@ class Model:
             self.model = pickle.load(f)
 
     def predict(self, features):
-        return self.model.predict_proba(features)[:, 1].item()
+        return self.model.predict_proba(features.reshape(1, -1))[:, 1].item()
