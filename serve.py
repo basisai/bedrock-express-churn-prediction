@@ -29,7 +29,7 @@ class Model(BaseModel):
         # Apply one-hot encoding to categorical features
         area = [int(subscriber_features["Area_Code"] == area_code) for area_code in AREA_CODES]
         state = [int(subscriber_features["State"] == state) for state in STATES]
-        return np.array([row_feats + area + state])
+        return np.array([row_feats + area + state], dtype=float)
 
     def predict(self, features):
         return self.model.predict_proba(features)[:, 1].tolist()
