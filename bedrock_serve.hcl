@@ -2,7 +2,7 @@
 version = "1.0"
 
 serve {
-    image = "asia.gcr.io/span-production/flask-gunicorn:v0.0.1.dev4"
+    image = "asia.gcr.io/span-ai/flask-gunicorn:v0.0.1.dev6"
     install = [
         "pip install -r requirements.txt",
     ]
