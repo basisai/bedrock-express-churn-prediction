@@ -17,5 +17,12 @@ serve {
         // https://github.com/basisai/bedrock-express#creating-a-model-server
         // If not specified as a parameter it defaults to "serve"
         BEDROCK_SERVER = "serve"
+        // Number of gunicorn workers to use
+        WORKERS = 2
+        // Gunicorn log level
+        LOG_LEVEL = "INFO"
+        
+        // For a set of environment variables available for the image, see
+        // https://github.com/basisai/bedrock-express/blob/master/Dockerfile
     }
 }
