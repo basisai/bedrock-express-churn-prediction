@@ -13,7 +13,8 @@ serve {
     ]
 
     parameters {
-        // This should be the name of python module that has a subclass of BaseModel https://github.com/basisai/bedrock-express#creating-a-model-server
+        // This should be the name of python module that has a subclass of BaseModel 
+        // https://github.com/basisai/bedrock-express#creating-a-model-server
         BEDROCK_SERVER = "serve"
     }
 }
