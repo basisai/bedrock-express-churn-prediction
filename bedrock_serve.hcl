@@ -2,7 +2,7 @@
 version = "1.0"
 
 serve {
-    image = "basisai/express-flask:v0.0.1"
+    image = "basisai/express-flask:v0.0.3"
     install = [
         "pip install -r requirements.txt",
     ]
@@ -14,6 +14,5 @@ serve {
 
     parameters {
         BEDROCK_SERVER = "serve"
-        WORKERS = "2"
     }
 }
