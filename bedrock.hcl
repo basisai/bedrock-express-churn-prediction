@@ -8,7 +8,7 @@ serve {
     ]
     script = [
         {sh = [
-            "/app/entrypoint.sh"
+            "entrypoint.sh"
         ]}
     ]
 
