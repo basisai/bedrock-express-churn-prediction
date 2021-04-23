@@ -2,7 +2,7 @@
 version = "1.0"
 
 serve {
-    image = "basisai/express-flask:v0.0.3"
+    image = "quay.io/basisai/express-flask:v0.0.5"
     install = [
         "pip install -r requirements.txt",
     ]
@@ -13,7 +13,7 @@ serve {
     ]
 
     parameters {
-        // This should be the name of python module that has a subclass of BaseModel 
+        // This should be the name of python module that has a subclass of BaseModel
         // https://github.com/basisai/bedrock-express#creating-a-model-server
         // If not specified as a parameter it defaults to "serve"
         BEDROCK_SERVER = "serve"
